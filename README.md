@@ -76,3 +76,19 @@ Pour chaque alerte :
 ---
 
 **Auteur** : Ryad Boujenan — Élève ingénieur Cybersécurité/SOC, EMSI Casablanca
+## Captures d'écran
+
+**Règles de détection configurées**
+![Règles de détection](screenshots/detection-rules.png)
+
+**Alerte High - PowerShell encodé**
+![Alerte PowerShell](screenshots/alert-powershell.png)
+
+**Règle EQL - Corrélation brute force SSH**
+![Règle EQL](screenshots/ssh-eql-rule.png)
+
+**Vue d'ensemble des alertes générées**
+![Vue d'ensemble](screenshots/alerts-overview.png)
+
+**Logs PowerShell déchiffrés dans Discover**
+![Logs PowerShell](screenshots/powershell-logs.png)
