@@ -33,8 +33,7 @@ Chaque commande échoue avec *"System error 86 — the specified network passwor
 
 Une règle de type **Seuil (Threshold)** a été créée dans Elastic Security pour détecter ce pattern.
 
-**Requête personnalisée (KQL) :**
-
+**Requête personnalisée (KQL) :*
 **Logique de détection :** résultats agrégés par `source.ip`, déclenchée si au moins **3 échecs** proviennent de la même source **et** ciblent au moins **3 comptes utilisateurs distincts** (`user.name`) — c'est cette double condition (volume + diversité des comptes) qui distingue un password spray d'un simple brute force sur un compte unique.
 
 **Planification :** exécution toutes les 5 minutes, avec 1 minute de récupération supplémentaire.
