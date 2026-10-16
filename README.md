@@ -2,6 +2,14 @@
 
 Lab de détection construit sur Elastic Stack (Elasticsearch, Kibana, Elastic Agent/Fleet), simulant un environnement SOC avec collecte de logs multi-OS, règles de détection personnalisées mappées MITRE ATT&CK, et investigation d'alertes.
 
+## Scénarios
+
+| Scénario | OS / Cible | Détection |
+|---|---|---|
+| [SSH Brute Force](#ssh-brute-force---multiple-authentication-failures) | Linux | Échecs d'authentification répétés + connexion réussie après brute force |
+| [PowerShell obfusqué](#suspicious-powershell---encoded-command-execution) | Windows 11 | Commande PowerShell encodée en base64 (technique d'évasion) |
+| [Active Directory — Password Spray](./active-directory-password-spray/) | Windows Server / DC | Password spray : peu d'échecs mais sur plusieurs comptes distincts, depuis la même source |
+
 ## Architecture
 
 - **Serveur Elastic Stack** : Ubuntu Server (Elasticsearch 9.5.5, Kibana 9.5.5, Fleet Server)
